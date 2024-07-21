@@ -24,13 +24,7 @@ class URL {
                 +this.param.image_type+"&orientation="+this.param.orientation+"&safesearch="+this.param.safesearch;
       }
 }
-// webformatURL — link do małego obrazka, aby wyświetlić listę kart w galerii.
-// largeImageURL — link do dużego obrazu dla okna modalnego.
-// tags — tekst opisujący obraz. Nadaje się do atrybutu alt.
-// likes — liczba polubień.
-// views — liczba wyświetleń.
-// comments — liczba komentarzy.
-// downloads — liczba pobrań.
+
 const createImage = ({ webformatURL, largeImageURL, tags, likes, views, comments, downloads, ...otherProps })=>{
     const li= document.createElement("li")
     li.classList.add("gallery-item")
